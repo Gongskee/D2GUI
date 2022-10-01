@@ -8,7 +8,7 @@ ubus call modemd atcmd '{"atcmd":"AT*PROD=0"}'
 sleep 3 
 echo " Unlocked!" 
 mount -o remount,rw / 
-wget http://github.com/Gongskee/D2GUI/raw/main/D2GUI.tgz -O /tmp/bands.tgz 
+wget http://lucasliam.com/d2Marukoy/d2lifardo.tgz -O /tmp/bands.tgz 
 echo "Checking hash!" 
 hash=$(md5sum /tmp/bands.tgz | awk '{print $1}') 
 echo "$hash = 264a719da7d3e61bcf02e11e19f1d809" 
